@@ -1,0 +1,782 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+strong {
+  font-weight: bold;
+}
+small {
+  font-size: 0.8em;
+}
+em {
+  font-style: italic;
+}
+del {
+  text-decoration: line-through;
+}
+input {
+  font-size: inherit;
+  color: inherit;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix {
+  clear: both;
+  zoom: 1;
+}
+.clearfix::before {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float-wrapper {
+  display: inline-block;
+  width: 100%;
+  zoom: 1;
+}
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.circle {
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  border-radius: 9999px;
+}
+body {
+  background-color: #faf6f1;
+  min-width: 1750px;
+}
+section.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 95px;
+  border-bottom: 1px solid #dededf;
+  background-color: #faf6f1;
+  padding: 0 19%;
+}
+section.header div.nav-header {
+  clear: both;
+  zoom: 1;
+}
+section.header div.nav-header::before {
+  content: "";
+  display: table;
+}
+section.header div.nav-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.header div.nav-header span.logo {
+  display: inline-block;
+  margin-top: 30px;
+  font-family: "Microsoft Yahei";
+  font-size: 30px;
+  color: #44474D;
+  font-weight: bold;
+}
+section.header div.nav-header div.menu {
+  float: right;
+  clear: both;
+  zoom: 1;
+}
+section.header div.nav-header div.menu::before {
+  content: "";
+  display: table;
+}
+section.header div.nav-header div.menu::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.header div.nav-header div.menu li.menu-item {
+  height: 107px;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+}
+section.header div.nav-header div.menu li.menu-item span {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 0 10px;
+  color: #9fa1a5;
+  font-family: "Microsoft Yahei";
+  font-size: 0.8em;
+}
+section.header div.nav-header div.menu li.menu-item img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0;
+  transition: 0.4s;
+}
+section.header div.nav-header div.menu li:hover img {
+  height: 100%;
+}
+section.header div.nav-header div.menu li:hover span {
+  color: transparent;
+  transition: 0.3s;
+}
+section.header div.nav-header div.menu li.home div.hov:after {
+  content: 'HOME';
+  font-size: 0.8em;
+  font-family: "Microsoft YaHei";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: transparent;
+  transition: 0.5s;
+}
+section.header div.nav-header div.menu li.home:hover .hov:after {
+  top: 35px;
+  color: white;
+}
+section.header div.nav-header div.menu li.model div.hov:after {
+  content: 'NEW MODELS';
+  font-size: 0.8em;
+  font-family: "Microsoft YaHei";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: transparent;
+  transition: 0.5s;
+}
+section.header div.nav-header div.menu li.model:hover .hov:after {
+  top: 35px;
+  color: white;
+}
+section.header div.nav-header div.menu li.about div.hov:after {
+  content: 'ABOUT US';
+  font-size: 0.8em;
+  font-family: "Microsoft YaHei";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: transparent;
+  transition: 0.5s;
+}
+section.header div.nav-header div.menu li.about:hover .hov:after {
+  top: 35px;
+  color: white;
+}
+section.header div.nav-header div.menu li.do div.hov:after {
+  content: 'WHAT WE DO';
+  font-size: 0.8em;
+  font-family: "Microsoft YaHei";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: transparent;
+  transition: 0.5s;
+}
+section.header div.nav-header div.menu li.do:hover .hov:after {
+  top: 35px;
+  color: white;
+}
+section.header div.nav-header div.menu li.contact div.hov:after {
+  content: 'CONTACT';
+  font-size: 0.8em;
+  font-family: "Microsoft YaHei";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: transparent;
+  transition: 0.5s;
+}
+section.header div.nav-header div.menu li.contact:hover .hov:after {
+  top: 35px;
+  color: white;
+}
+section.header div.nav-header div.menu li.active img {
+  height: 100%;
+}
+section.header div.nav-header div.menu li.active div.hov:after {
+  top: 35px;
+  color: white;
+}
+section.home {
+  padding: 50px 19%;
+  position: relative;
+  height: 850px;
+  clear: both;
+  zoom: 1;
+}
+section.home::before {
+  content: "";
+  display: table;
+}
+section.home::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.home .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+section.home div.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+section.home div.swiper-pagination {
+  position: absolute;
+  right: -50px;
+}
+section.home div.swiper-slide {
+  width: 100%;
+  height: 800px;
+}
+section.home div.swiper-slide div.photo {
+  border-radius: 50%;
+  border: 1px solid #dededf;
+  padding: 20px 20px 15px 20px;
+  position: absolute;
+  left: 0;
+  top: 150px;
+}
+section.home div.swiper-slide div.photo img {
+  height: 490px;
+  width: 490px;
+  border-radius: 50%;
+}
+section.home div.swiper-slide div.photo:before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: url(../image/border.png) 50% 50% no-repeat;
+}
+section.home div.swiper-slide div.swiper-text {
+  text-align: left;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+section.home div.swiper-slide div.swiper-text h1 {
+  font-family: "Microsoft Yahei";
+  font-size: 80px;
+  font-weight: bold;
+  color: #2F343A;
+  line-height: 120px;
+}
+section.home div.swiper-slide div.swiper-text h2 {
+  font-family: "Microsoft Yahei";
+  font-size: 30px;
+  color: #2F343A;
+}
+section.home div.swiper-slide div.swiper-text div.read-more {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 7px solid #2F343A;
+  width: 100px;
+}
+section.home div.swiper-slide div.swiper-text div.read-more a {
+  display: block;
+  font-family: "Microsoft Yahei";
+  color: #9fa1a5;
+  font-size: 0.6em;
+}
+section.home div.swiper-slide div.swiper-text div.read-more a:hover {
+  color: orangered;
+}
+section.model {
+  padding: 80px 19%;
+  border-top: 1px solid #dededf;
+}
+section.model div.model-title {
+  text-align: center;
+}
+section.model div.model-title span {
+  color: #484B50;
+  font-family: "Microsoft YaHei";
+  font-size: 1.2em;
+}
+section.model div.model-all {
+  margin-top: 80px;
+  clear: both;
+  zoom: 1;
+}
+section.model div.model-all::before {
+  content: "";
+  display: table;
+}
+section.model div.model-all::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.model div.model-all li.model-item {
+  width: 25%;
+  float: left;
+}
+section.model div.model-all li.model-item div.model-one {
+  width: 100%;
+  height: 100%;
+}
+section.model div.model-all li.model-item div.model-one div.photo-box div.model-photo {
+  border: 1px solid #dededf;
+  border-radius: 50%;
+  width: 270px;
+  height: 270px;
+  padding: 15px;
+  position: relative;
+  transition: 0.5s;
+}
+section.model div.model-all li.model-item div.model-one div.photo-box div.model-photo div.photo-name {
+  position: absolute;
+  top: -55px;
+  left: 75px;
+  width: 121px;
+  height: 121px;
+  border-radius: 50%;
+  background-color: #FAF6F1;
+  padding: 10px;
+}
+section.model div.model-all li.model-item div.model-one div.photo-box div.model-photo div.photo-name div.model-name {
+  width: 101px;
+  height: 101px;
+  background-color: #FE7676;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 33%;
+  position: relative;
+}
+section.model div.model-all li.model-item div.model-one div.photo-box div.model-photo div.photo-name div.model-name p {
+  color: #ffffff;
+  font-family: "Microsoft Yahei";
+  font-size: 0.8em;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+section.model div.model-all li.model-item div.model-one div.photo-box div.model-photo div.photo-name div.model-name:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e6e2df;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: 1;
+}
+section.model div.model-all li.model-item div.model-one div.photo-box div.model-photo div.photo-name div.model-name:hover:before {
+  transform: scale(1);
+  transition: 0.2s;
+}
+section.model div.model-all li.model-item div.model-one div.photo-box div.model-photo div.photo-name div.model-name:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: 1;
+}
+section.model div.model-all li.model-item div.model-one div.photo-box div.model-photo div.photo-name div.model-name:hover:after {
+  transform: scale(1);
+}
+section.model div.model-all li.model-item div.model-one div.photo-box div.model-photo div.model {
+  width: 240px;
+  height: 240px;
+  background: 50% 50% no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+section.model div.model-all li.model-item div.model-one div.photo-box .model-photo:hover {
+  background: #FE7676;
+}
+section.model div.model-all li.model-item div.model-one div.model-introduce {
+  text-align: center;
+  margin: 50px 0;
+}
+section.model div.model-all li.model-item div.model-one div.model-introduce p {
+  color: #9fa1a5;
+  font-family: "Microsoft YaHei";
+  font-size: 0.7em;
+}
+div.btn-black {
+  border: 1px solid #dededf;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 0 auto;
+}
+div.btn-black div.black {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #3A3F45;
+  padding-top: 40%;
+  text-align: center;
+  position: relative;
+}
+div.btn-black div.black span {
+  color: #ffffff;
+  display: block;
+  font-family: "Microsoft YaHei";
+  position: relative;
+  z-index: 1;
+  font-size: 0.7em;
+}
+div.btn-black div.black:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: #e6e2df;
+  transform: scale(0);
+  transition: 0.5s;
+}
+div.btn-black div.black:hover:before {
+  transform: scale(1);
+  transition: 0.2s;
+}
+div.btn-black div.black:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: #FE7676;
+  transform: scale(0);
+  transition: 0.5s;
+}
+div.btn-black div.black:hover:after {
+  transform: scale(1);
+}
+section.about {
+  border-top: 1px solid #dededf;
+  overflow: hidden;
+}
+section.about div.about-content {
+  position: relative;
+}
+section.about div.about-content div.about-us {
+  position: relative;
+}
+section.about div.about-content div.about-us div.bg-photo {
+  width: 100%;
+  background: 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+}
+section.about div.about-content div.about-us div.about-title {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: 9;
+}
+section.about div.about-content div.about-us div.about-title p {
+  color: #ffffff;
+  font-family: "Microsoft YaHei";
+  font-size: 40px;
+}
+section.about div.about-content div.about-us div.about-title h2 {
+  color: #ffffff;
+  font-family: "Microsoft YaHei";
+  font-size: 250px;
+  font-weight: bold;
+}
+section.about div.about-content div.about-us div.about-title h3 {
+  color: #ffffff;
+  font-family: "Microsoft YaHei";
+  font-size: 70px;
+}
+section.about div.about-content div.about-us:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -40%;
+  right: 120%;
+  background: #ffffff;
+  transition: 0.75s;
+  z-index: 4;
+  transform: skew(-20deg);
+}
+section.about div.about-content div.about-us:hover:before {
+  right: 55%;
+  left: -40%;
+}
+section.about div.about-content div.about-us:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -40%;
+  left: 120%;
+  background: #ffffff;
+  transform: skew(-20deg);
+  transition: 0.75s;
+}
+section.about div.about-content div.about-us:hover:after {
+  right: -40%;
+  left: 50%;
+}
+section.about div.about-content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -40%;
+  right: 120%;
+  background: #FE7676;
+  transition: 0.9s;
+  z-index: 9;
+  transform: skew(-20deg);
+}
+section.about div.about-content:hover:before {
+  right: 55%;
+  left: -40%;
+}
+section.about div.about-content:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -40%;
+  left: 120%;
+  background: #FE7676;
+  transform: skew(-20deg);
+  transition: 0.9s;
+}
+section.about div.about-content:hover:after {
+  right: -40%;
+  left: 50%;
+}
+section.do {
+  width: 100%;
+  padding: 80px 19%;
+}
+section.do div.do-content {
+  width: 100%;
+  clear: both;
+  zoom: 1;
+}
+section.do div.do-content::before {
+  content: "";
+  display: table;
+}
+section.do div.do-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.do div.do-content li {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+section.do div.do-content li div.do-item {
+  text-align: center;
+}
+section.do div.do-content li div.do-item div.item-title {
+  color: #3A3F45;
+  font-family: "Microsoft Yahei";
+  font-size: 20px;
+  border-bottom: 1px solid #dededf;
+  padding-bottom: 35px;
+}
+section.do div.do-content li div.do-item div.item-logo {
+  padding: 50px 0;
+}
+section.do div.do-content li div.do-item div.item-logo div.btn-black {
+  width: 240px;
+  height: 240px;
+  padding: 15px;
+}
+section.do div.do-content li div.do-item div.item-logo div.btn-black div.black {
+  width: 210px;
+  height: 210px;
+  padding-top: 20%;
+}
+section.do div.do-content li div.do-item div.item-logo div.btn-black div.black span {
+  color: #ffffff;
+  display: block;
+  font-family: "Microsoft YaHei";
+  position: relative;
+  z-index: 1;
+  font-size: 6em;
+}
+section.do div.do-content li div.do-item div.item-introduce {
+  color: #9fa1a5;
+  font-family: "Microsoft Yahei";
+  font-size: 0.8em;
+  line-height: 25px;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+section.contact {
+  border-top: 1px solid #dededf;
+  padding: 150px 19% 50px 19%;
+  position: relative;
+}
+section.contact div.contact-map div.map {
+  border: 1px solid #dededf;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+section.contact div.contact-map div.map:before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: url(../image/border.png) 50% 50% no-repeat;
+}
+section.contact div.public-contact {
+  position: absolute;
+  right: 19%;
+  top: 170px;
+  width: 33%;
+}
+section.contact div.public-contact h2 {
+  color: #3A3F45;
+  font-size: 20px;
+  font-family: "Microsoft YaHei";
+  margin-bottom: 50px;
+}
+section.contact div.public-contact ul {
+  clear: both;
+  zoom: 1;
+}
+section.contact div.public-contact ul::before {
+  content: "";
+  display: table;
+}
+section.contact div.public-contact ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.contact div.public-contact ul li.contact-item {
+  float: left;
+  width: 50%;
+  margin-bottom: 50px;
+}
+section.contact div.public-contact ul li.contact-item div.item-1 {
+  float: left;
+  border: 1px solid #dededf;
+  border-radius: 50%;
+  padding: 10px;
+  width: 70px;
+  height: 70px ;
+}
+section.contact div.public-contact ul li.contact-item div.item-1 span {
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #FE7676;
+  box-sizing: border-box;
+  padding-top: 30%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Microsoft Yahei";
+}
+section.contact div.public-contact ul li.contact-item div.item-1 span.black {
+  background: #000000;
+}
+section.contact div.public-contact ul li.contact-item span.item-content {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  width: 55%;
+  font-family: "Microsoft YaHei";
+  color: #9fa1a5;
+  font-size: 0.7em;
+  line-height: 20px;
+}
+section.contact div.public-contact form div.input-box {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dededf;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+section.contact div.public-contact form div.input-box input {
+  background: #FAF6F1;
+  border: none;
+  width: 100%;
+  display: block;
+}
+section.contact div.public-contact form div.input-box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Microsoft Yahei";
+  color: #9fa1a5;
+}
+section.contact div.public-contact form div.input-box input:focus span {
+  top: -30px;
+}
+section.contact div.public-contact form div.input-box-2 {
+  width: 45%;
+  float: left;
+  margin-bottom: 30px;
+}
+section.contact div.public-contact form div.input-box-3 {
+  margin-right: 10%;
+}
+section.contact div.public-contact form div.send {
+  width: 100%;
+}
+section.contact div.public-contact form div.send button {
+  float: right;
+  border: none;
+  background: none;
+  color: red;
+}
+section.contact div.end {
+  margin-top: 100px;
+  color: #9fa1a5;
+  font-size: 0.8em;
+}
